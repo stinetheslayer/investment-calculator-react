@@ -1,38 +1,25 @@
-export default function UserInput(props) {
+export default function UserInput() {
     return (
         <section id="user-input">
             <div className="input-group">
-
-                <div>
-                    <div>
-                        <label>Initial Investment
-                        <input type="number" label={props.label} value={props.value} onChange={props.value} />
-                        </label>
-                    </div>
-
-                    <div>
-                        <label>Annual Investment
-                        <input type="number" label={props.label} value={props.value} onChange={props.value} />
-                        </label>
-                    </div>
-                </div>
-
-
-                <div>
-                    <div>
-                        <label>Expected Return
-                        <input label={props.label} value={props.value} onChange={props.value} />
-                        </label>
-                    </div>
-
-
-                    <div>
-                        <label>Duration
-                        <input label={props.label} value={props.value} onChange={props.value} />
-                        </label>
-                    </div>
-                </div>
-
+                <p>
+                    <label>Initial Investment</label>
+                    <input type="number" required />
+                </p>
+                <p>
+                    <label>Annual Investment</label>
+                    <input type="number" required />
+                </p>
+            </div>
+            <div className="input-group">
+                <p>
+                    <label>Expected Return</label>
+                    <input type="number" required />
+                </p>
+                <p>
+                    <label>Duration</label>
+                    <input type="number" required />
+                </p>
             </div>
         </section>
     )
