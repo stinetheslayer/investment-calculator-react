@@ -18,7 +18,8 @@ function App() {
         setUserInput(prevUserInput => {
             return {
                 ...prevUserInput,
-                [inputIdentifier]: newValue,
+                [inputIdentifier]: +newValue,
+                // Forces to switch to number instead of adding strings
             };
         });
     }
