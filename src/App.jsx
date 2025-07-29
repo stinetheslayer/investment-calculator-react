@@ -5,12 +5,11 @@ import Results from "./components/Results.jsx"
 
 function App() {
   return (
-      <>
-    <Header />
-    <UserInput />
-    <Results />
-      </>
-
+    <>
+      <Header />
+      <UserInput />
+      <Results />
+    </>
   )
 }
 
